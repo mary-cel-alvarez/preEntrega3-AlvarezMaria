@@ -1,0 +1,11 @@
+/*Utilizado en medias*/
+@mixin size ($width, $heigth){
+    height: $heigth;
+    width: $width;
+}
+
+/*Utilizado en style.css*/
+.footer{
+        display: flex;
+        width: 100%;
+}

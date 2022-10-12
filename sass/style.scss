@@ -1,0 +1,129 @@
+@import "fuentes";
+@import "generales";
+@import "medias";
+
+/* Estilos en index.html */
+
+.gallery__item:nth-child(1) {
+    grid-row-start: span 3;
+}
+.gallery__item:nth-child(4) {
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+/* Estilos de velas.html */
+
+.img-fluid-velas{
+    max-width: 100%;
+    @include size (350px, auto);
+    margin-top: 35px;
+    box-shadow: 10px 15px 35px black;
+    margin-bottom: 55px;
+}
+
+.bg-footer{
+    @extend .footer; 
+    background-color: #FAF6D2;
+}
+
+/* Estilos de lamparas.html */
+
+.img-fluid-lamparas{
+    max-width: 100%;
+    @include size (350px, auto);
+    margin-top: 35px;
+    box-shadow: 10px 15px 35px black;
+    margin-bottom: 55px;
+}
+
+.bg-lampara-footer{
+    @extend .footer; 
+    background-color: #FAF6D2;
+}
+
+/* Estilos de alfombras.html */
+
+.img-fluid-alfombras{
+    max-width: 100%;
+    @include size (350px, auto);
+    margin-top: 35px;
+    box-shadow: 10px 15px 35px black;
+    margin-bottom: 55px;
+}
+
+.bg-alfombras-footer{
+    @extend .footer; 
+    background-color: #FAF6D2;
+}
+
+/* Estilos de almohadones.html */
+
+.img-fluid-almohadones{
+    max-width: 100%;
+    @include size (350px, auto);
+    margin-top: 35px;
+    box-shadow: 10px 15px 35px black;
+    margin-bottom: 55px;
+}
+
+.bg-almohadones-footer{
+    background-color: #FAF6D2;
+}
+
+/* Estilos de contacto.html */
+
+.bg-contacto-footer{
+    @extend .footer; 
+    background-color: #FAF6D2;
+}
+
+@media (min-width: 768px){
+    .navbar-header img{
+        width: 70px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+    .navbar-item a{
+        font-size: 20px;
+    }    
+    .gallery__item:nth-child(1) {
+        grid-row-start: span 2;
+    }
+    .gallery__item:nth-child(3) {
+        grid-row-start: span 2;
+    }
+    .gallery__item:nth-child(4) {
+        grid-row-start: span 2;
+    }
+    .gallery__item:nth-child(5) {
+        grid-row-start: span 1;
+    }
+    
+    
+}
+
+@media (min-width: 1200px){
+    .navbar-header img{
+        width: 80px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+    .navbar-item a{
+        font-size: 25px;
+    }    
+    .gallery__item:nth-child(1) {
+        grid-row-start: span 3;
+    }
+    .gallery__item:nth-child(3) {
+        grid-row-start: span 3;
+    }
+    .gallery__item:nth-child(4) {
+        grid-row-start: span 3;
+    }
+    .gallery__item:nth-child(5) {
+        grid-row-start: span 2;
+    }
+}
